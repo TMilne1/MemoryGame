@@ -1,0 +1,74 @@
+body {
+  position: relative;
+}
+
+header {
+  font-family: 'Syne Mono', monospace;
+  font-size: 5em;
+  text-align: center;
+}
+
+.score-div {
+  font-family: 'Syne Mono', monospace;
+  display: flex;
+  justify-content: space-around;
+}
+
+.gameboard {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+#game div {
+  border: 1px solid black;
+  width: 15%;
+  height: 200px;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 4px;
+
+}
+
+.red.show {
+  background-color: red;
+}
+
+.yellow.show {
+  background-color: yellow;
+}
+
+.indigo.show {
+  background-color: indigo;
+}
+
+.violet.show {
+  background-color: violet;
+}
+
+.blue.show {
+  background-color: blue;
+}
+
+.green.show {
+  background-color: green;
+}
+
+.orange.show {
+  background-color: orange;
+}
+
+.purple.show {
+  background-color: purple;
+}
+
+.incomplete {
+  display: none;
+}
+
+.card {
+  background-image: url("https://i.pinimg.com/236x/27/af/61/27af615279f62ae1e9b6394c896f7922--card-tattoo-playing-cards.jpg");
+  background-size: cover;
+  background-position: center;
+}
