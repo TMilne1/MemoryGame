@@ -22,6 +22,7 @@ const COLORS = [
   "yellow",
   "indigo",
   "violet",
+  "teal",
   "red",
   "blue",
   "green",
@@ -30,6 +31,7 @@ const COLORS = [
   "yellow",
   "indigo",
   "violet",
+  "teal"
 ];
 
 const headerColor = setInterval(function () {
