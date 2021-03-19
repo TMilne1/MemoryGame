@@ -157,9 +157,9 @@ restartButton.addEventListener("click", () => {
   
 })
 
-const notification1 = document.createElement("h1");
+
 const notification2 = document.createElement("h1");
-const notification3 = document.createElement("h1");
+
 function gameover(){
   if(matches == COLORS.length/2){
     //make reset button available
@@ -174,24 +174,13 @@ function gameover(){
     
     // winning notification
 
-    notification1.innerText = "You Win !!!!";
     notification2.innerText = "You Win !!!!";
-    notification3.innerText = "You Win !!!!";
+   
+    notification2.style.position = "inherit";
+    gameContainer.append(notification2)
 
-    notification1.style.position = "fixed";
-    notification1.style.top = "10%";
-    notification1.style.left = "2%";
-    body.append(notification1)
 
-    notification2.style.position = "fixed";
-    notification2.style.top = "38%";
-    notification2.style.left = "38%";
-    body.append(notification2)
 
-    notification3.style.position = "fixed";
-    notification3.style.top = "68%";
-    notification3.style.left = "68%";
-    body.append(notification3)
 
 
 
