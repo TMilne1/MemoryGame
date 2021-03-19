@@ -9,7 +9,7 @@ const scoreBox = document.querySelectorAll(".score-div")
 let gameStarted = true; //
 let guesses = 0;
 let matches = 0
-let bestScore = localStorage["bestScore"] || "You're the first player of this game!"
+let bestScore = localStorage["bestScore"] || "NONE SET"
 scoreKeeper.innerText = `SCORE: ${guesses}`
 bestScoreElement.innerText = `BEST SCORE: ${bestScore}`
 

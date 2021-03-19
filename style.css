@@ -1,6 +1,7 @@
 body {
   position: relative;
   text-align: center;
+  background: whitesmoke;
 }
 
 header {
@@ -17,19 +18,21 @@ header {
 
 .gameboard {
   border: 1px solid black;
-  width: 60vw;
+  max-width: 70%;
+  height: 50%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background: rgb(177, 175, 175)
 }
 
 #game div {
   border: 1px solid black;
   border-radius: 4px;
-  height: 10em;
-  width: 7em;
-  margin: 10px;
+  height: 110px;
+  width: 80px;
+  margin: 5px;
   display: inline-block;
   flex-basis: 15%;
 }
@@ -80,8 +83,8 @@ header {
 
 .card {
   background-image: url("https://i.pinimg.com/236x/27/af/61/27af615279f62ae1e9b6394c896f7922--card-tattoo-playing-cards.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: 100%;
+  background-position:center;
 }
 
 #start {
@@ -95,9 +98,9 @@ header {
   visibility: hidden;
 }
 
-
 #restart {
-  width: 15vw;
+  width: 10em;
+  border-radius: 4px;
   background-color: blue;
   color: white;
   font-size: 3em;
