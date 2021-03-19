@@ -144,16 +144,16 @@ restartButton.addEventListener("click", () => {
   for (let i = gameContainer.childElementCount - 1; i >= 0; i--) {
     gameContainer.children[i].remove()
   }
-
-  guesses = 0;
-  matches = 0;
-  notification1.remove()
-  notification2.remove()
-  notification3.remove()
+  console.log("------------")
   shuffledColors = shuffle(COLORS)
   createDivsForColors(shuffledColors)
   scoreKeeper.innerText = `SCORE: ${guesses}`
   restartButton.classList.add("incomplete")
+
+  guesses = 0;
+  matches = 0;
+
+
   
 })
 
@@ -178,11 +178,6 @@ function gameover(){
    
     notification2.style.position = "inherit";
     gameContainer.append(notification2)
-
-
-
-
-
 
   }
 }
